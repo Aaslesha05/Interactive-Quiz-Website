@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login-container">
+    <div class="login-container" id="loginContainer">
         <h2>Login</h2>
         <form id="loginForm">
-            <input type="text" id="username" placeholder="Username" required><br><br>
-            <input type="password" id="password" placeholder="Password" required><br><br>
-            <button type="submit">Login</button>
+            <input type="text" id="username" placeholder="Username" ><br><br>
+            <input type="password" id="password" placeholder="Password" ><br><br>
+            <button type="submit">Login</button><br><br>
+            <a href="sign.html">Don't have an account?</a>
+            <p id="errorMessage" style="color: red; display: none;">Please fill in both fields!</p>
         </form>
     </div>
 
-    <script src="script.js"></script>
+    <div class="success-card" id="successCard" style="display: none;">
+        <h3>Login Successful!</h3>
+        <p>Redirecting to the quiz page.</p>
+        <button type="button" id="quiz" onclick="click" >Go to Quiz</button>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

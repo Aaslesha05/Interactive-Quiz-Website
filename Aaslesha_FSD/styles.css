@@ -1,0 +1,141 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #efeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99.8vh;
+    
+    margin: 0;
+    
+    border: solid 0.5px #47a84b ;
+    box-shadow: inset 0 0px 30px #47a84b;
+}
+
+/* Login container styling */
+.login-container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    
+    box-shadow: 0 0px 20px #47a84b;
+    width: 320px;
+    text-align: center;
+}
+
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+input:focus {
+    outline: none;
+    border-color: #47a84b;
+    box-shadow: 0 0 5px rgba(71, 168, 75, 0.5);
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #47a84b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #71b474;
+}
+
+
+#errorMessage {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none; /* Hidden by default */
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.success-card {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    text-align: center;
+    animation: slideDown 0.4s ease-in-out;
+}
+
+.success-card h3 {
+    color: #47a84b;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.success-card p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.success-card button {
+    background-color: #47a84b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.success-card button:hover {
+    background-color: #58ba5d;
+}
+
+/* Animation for success card */
+@keyframes Popout {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    75%{
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
