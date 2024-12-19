@@ -1,13 +1,53 @@
 // Questions for the quiz
 const quizData = [
     {
-        question: "What is HTML?",
-        options: ["A markup language", "A programming language", "A database"],
-        correctAnswer: 0
+        question: "Which property is used to add spacing between the content and the border of an element?",
+        options: ["margin", "padding", "border-spacing","content-spacing"],
+        correctAnswer: 1
     },
     {
         question: "Which language is used for styling web pages?",
         options: ["JavaScript", "CSS", "HTML"],
+        correctAnswer: 1
+    },
+    {
+        question: "What does CSS stand for?",
+        options: ["Computer Style Sheets","Cascading Style Sheets","Creative Style Sheets","Colorful Style Sheets"],
+        correctAnswer: 1
+    },
+    {
+        question: "Which HTML tag is used to apply an external CSS file?",
+        options: ["<script>","<style>","<link>","<css>"],
+        correctAnswer: 2
+    },
+    {
+        question: "How can you make an element's corners rounded?",
+        options: ["border-style", "corner-style", "border-radius","corner-radius"],
+        correctAnswer: 2
+    },
+    {
+        question: "Which property is used to control the transparency of an element?",
+        options: ["visibility", "opacity", "display","transparency"],
+        correctAnswer: 1
+    },
+    {
+        question: "How do you add a background color in CSS?",
+        options: ["background-color: blue", "bgcolor: blue", "color: blue","background: blue"],
+        correctAnswer: 0
+    },
+    {
+        question: "Which property is used to change the text color of an element?",
+        options: ["text-color", "color", "font-color","text-style"],
+        correctAnswer: 1
+    },
+    {
+        question: "Which property is used to change the font of an element?",
+        options: ["font-style","font-weight","font-family","font-type"],
+        correctAnswer: 2
+    },
+    {
+        question: "What is the correct syntax for a CSS comment?",
+        options: ["// This is a comment", "/* This is a comment */", "<!-- This is a comment -->","# This is a comment"],
         correctAnswer: 1
     }
 ];
