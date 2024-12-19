@@ -6,10 +6,50 @@ const quizData = [
         correctAnswer: 0
     },
     {
-        question: "Which language is used for styling web pages?",
-        options: ["JavaScript", "CSS", "HTML"],
+        question: "Which tag is used to create a hyperlink in HTML?",
+        options: ["<a>", "<link>", "<href>","<hyper>"],
+        correctAnswer: 0
+    },
+    {
+        question: "Which tag is used to define the largest heading?",
+        options: ["<h1>", "<head>", "<heading>","<h6>"],
+        correctAnswer: 0
+    },
+    {
+        question: "What is the purpose of adding <title> tag in HTML?",
+        options: ["To add a heading to a webppage","To set the title of the webpage displayed in the browser's title bar","To create a footer for the webpage","To style the webpage"],
         correctAnswer: 1
-    }
+    },
+    {
+        question: "What does the alt attribute in the <img> tag specify?",
+        options: ["The image's URL","The alternative text if the image fails to load","The alignment of the image","The title of the image"],
+        correctAnswer: 1
+    },
+    {
+        question: "Which attribute is used to uniquely identify an HTML element?",
+        options: ["class","id","style","name"],
+        correctAnswer: 1
+    },
+    {
+        question: "Which HTML tag is used to create a form?",
+        options: ["<input>","<form>","<textarea>","<button>"],
+        correctAnswer: 1
+    },
+    {
+        question: "What is the correct input type to create a password field in a form?",
+        options: ["text","password","hidden","secure"],
+        correctAnswer: 1
+    },
+    {
+        question: "Which tag is used to embed a video in HTML?",
+        options: ["<movie>","<video>","<embed>","<source>"],
+        correctAnswer: 1
+    },
+    {
+        question: "What does the <audio> tag in HTML do?",
+        options: ["Adds to a text description","Embeds an audio file into the webpage","Creates an image with sound","Generates background music for the webpage"],
+        correctAnswer: 1
+    },
 ];
 
 // Function to load quiz content dynamically
