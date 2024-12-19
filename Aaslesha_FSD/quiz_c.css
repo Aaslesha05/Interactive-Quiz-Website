@@ -1,53 +1,70 @@
-/* General quiz container styling */
+/* Enhanced styling for the quiz container */
 .quiz-container {
-    padding: 20px;
-    line-height: 1.5;
-    box-shadow: 0 0 10px;
+    padding: 30px;
+    line-height: 1.8;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     margin: 50px auto;
-    width: 1100px;
-    font-size: 1.1rem;
+    width: 90%;
+    max-width: 1200px;
+    font-size: 1.2rem;
     background-color: #ffffff;
-    border-radius: 0px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.quiz-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Horizontal rule styling */
+.quiz-container h2 {
+    text-align: center;
+    color: rgb(140, 51, 140);
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .hr {
-    border: 1.5px solid rgb(113, 61, 161);
-    margin: 20px 0;
+    border: 2px solid rgb(113, 61, 161);
+    margin: 30px 0;
     transition: border-color 0.3s ease;
-    position: relative; /* Needed for absolute centering */
-    animation: hrExpand 1s ease-out forwards
+    position: relative;
+    animation: hrExpand 1.2s ease-out forwards;
 }
 
 .hr:hover {
     border-color: rgb(186, 111, 219);
+    box-shadow: 0 0 5px rgb(186, 111, 219);
 }
 
 @keyframes hrExpand {
     0% {
-        width: 0; /* Start with no width */
-        left: 50%; /* Start from the middle of the container */
+        width: 0;
+        left: 50%;
     }
     50% {
-        width: 50%; /* Expand to 50% of the container width */
-        left: 25%; /* Position the line so it expands evenly from the center */
+        width: 50%;
+        left: 25%;
     }
     100% {
-        width: 100%; /* Expand to full width */
-        left: 0; /* Position the line fully aligned to the left */
+        width: 100%;
+        left: 0;
     }
 }
+
 /* Quiz form container styling */
 #quizForm {
-    padding: 20px;
-    line-height: 1.6;
+    padding: 25px;
+    line-height: 1.8;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 0 auto;
-    width: 900px;
-    font-size: 1.1rem;
-    background-color: #eddaf3;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    max-width: 1000px;
+    font-size: 1.2rem;
+    background-color: #f7eaf7;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
 }
 
 /* Styling for radio buttons */
@@ -55,26 +72,65 @@ input[type="radio"] {
     margin: 8px;
     padding: 5px;
     cursor: pointer;
+    accent-color: rgb(142, 27, 142);
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+input[type="radio"]:hover {
+    transform: scale(1.2);
 }
 
-/* Add hover effect to the quiz form */
 #quizForm:hover {
-    background-color: #f2e1f7;
+    background-color: #f9f1fc;
 }
 
-#submitBtn{
-    margin-left: 45%;
-    background-color: rgb(140, 51, 140);
-    color: white;
-    font-size: 1rem;
-    border-radius: 20px;
-    padding: 10px;
+#quizForm p {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: rgb(113, 61, 161);
+}
+
+#quizForm label {
+    font-size: 1.2rem;
+    color: rgb(80, 50, 120);
+}
+
+#submitBtn {
+    padding: 15px 30px;
+    border-radius: 25px;
     border: none;
-    transition: background-color 0.3s ease;
+    background-color: rgb(142, 27, 142);
+    color: #fff;
+    margin: 20px auto;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 10px rgba(142, 27, 142, 0.3);
+}
+#submitBtn:hover {
+    background-color: rgb(185, 26, 185);
+    box-shadow: 0 8px 15px rgba(142, 27, 142, 0.5);
+    transform: translateY(-3px);
 }
 
-#submitBtn:hover{
-    background-color: rgb(173, 105, 202);
-    box-shadow: 0 0 10px;
+/* Add responsive design for mobile */
+@media screen and (max-width: 768px) {
+    .quiz-container {
+        width: 90%;
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    #quizForm {
+        width: 90%;
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    #submitBtn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 }
