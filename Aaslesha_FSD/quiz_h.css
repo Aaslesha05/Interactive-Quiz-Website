@@ -1,13 +1,13 @@
 .quiz-container {
     padding: 30px;
     line-height: 1.8;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
     margin: 50px auto;
     width: 90%;
     max-width: 1200px;
     font-size: 1.2rem;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 0px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .quiz-container:hover {
