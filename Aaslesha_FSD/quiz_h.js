@@ -1,17 +1,8 @@
 // Questions for the quiz
 const quizData = [
-    {
-        question: "What is HTML?",
-        options: ["A markup language", "A programming language", "A database"],
-        correctAnswer: 0
-    },
-    {
-        question: "Which language is used for styling web pages?",
-        options: ["JavaScript", "CSS", "HTML"],
-        correctAnswer: 1
-    }
-];
 
+    
+];
 // Function to load quiz content dynamically
 function loadQuiz() {
     const quizForm = document.getElementById('quizForm');
