@@ -1,3 +1,65 @@
-.body{
+.quiz-container
+{
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0 0 6px;    
     width: 1000px;
+    line-height: 1.8;
+    padding: 20px;
+    border: solid green 1px;
+    font-size: 1.1rem;
+
+}
+input[type="radio"]
+{
+    margin: 10px;
+    accent-color: green;
+    cursor: pointer;
+    border: solid green 1px;
+    
+}
+
+
+.quiz-container h2{
+    text-align: center;
+    font-size: 33px;
+    padding: 10px;
+    border-bottom: solid green 2px;
+}
+#quizForm 
+{
+    margin: 20px;
+    padding: 20px;
+    border: solid green 1px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: black
+}
+#quizForm p
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+#submitBtn
+{
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    border: none;
+    background-color: rgb(57, 176, 57);
+    color: #ffff;
+    text-decoration: none;
+    margin-left: 43%;
+    font-size: 1.0rem;
+      
+    
+}
+#submitBtn:hover
+{
+    background-color: rgb(84, 190, 84);
+    color: #ffff;
+    text-decoration: none;
 }
