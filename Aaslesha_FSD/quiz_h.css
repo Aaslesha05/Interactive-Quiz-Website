@@ -1,8 +1,8 @@
 .quiz-container
 {
-    border-radius: 10px;
+    border-radius: 0px;
     margin: 50px auto;
-    box-shadow: 0 0 6px;    
+    box-shadow: 0 0 10px;    
     width: 1000px;
     line-height: 1.8;
     padding: 20px;
@@ -31,7 +31,7 @@ input[type="radio"]
     margin: 20px;
     padding: 20px;
     border: solid green 1px;
-    border-radius: 10px;
+    border-radius: 7px;
     background-color: #f9f9f9;
     color: black
 }
