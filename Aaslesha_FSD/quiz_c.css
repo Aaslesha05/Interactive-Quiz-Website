@@ -1,0 +1,80 @@
+/* General quiz container styling */
+.quiz-container {
+    padding: 20px;
+    line-height: 1.5;
+    box-shadow: 0 0 10px;
+    margin: 50px auto;
+    width: 1100px;
+    font-size: 1.1rem;
+    background-color: #ffffff;
+    border-radius: 0px;
+}
+
+/* Horizontal rule styling */
+.hr {
+    border: 1.5px solid rgb(113, 61, 161);
+    margin: 20px 0;
+    transition: border-color 0.3s ease;
+    position: relative; /* Needed for absolute centering */
+    animation: hrExpand 1s ease-out forwards
+}
+
+.hr:hover {
+    border-color: rgb(186, 111, 219);
+}
+
+@keyframes hrExpand {
+    0% {
+        width: 0; /* Start with no width */
+        left: 50%; /* Start from the middle of the container */
+    }
+    50% {
+        width: 50%; /* Expand to 50% of the container width */
+        left: 25%; /* Position the line so it expands evenly from the center */
+    }
+    100% {
+        width: 100%; /* Expand to full width */
+        left: 0; /* Position the line fully aligned to the left */
+    }
+}
+/* Quiz form container styling */
+#quizForm {
+    padding: 20px;
+    line-height: 1.6;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 900px;
+    font-size: 1.1rem;
+    background-color: #eddaf3;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for radio buttons */
+input[type="radio"] {
+    margin: 8px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Add hover effect to the quiz form */
+#quizForm:hover {
+    background-color: #f2e1f7;
+}
+
+#submitBtn{
+    margin-left: 45%;
+    background-color: rgb(140, 51, 140);
+    color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#submitBtn:hover{
+    background-color: rgb(173, 105, 202);
+    box-shadow: 0 0 10px;
+}
