@@ -6,6 +6,9 @@
     <title>Quiz Results</title>
     <link rel="stylesheet" href="result.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
 </head>
 <body>
     <div class="results-container">
@@ -30,6 +33,7 @@
                 <canvas id="percentageGraph"></canvas>
             </div>
         </div>
+        <button id="download-pdf">Download as PDF</button>
     </div>
     <script src="results.js"></script>
 </body>

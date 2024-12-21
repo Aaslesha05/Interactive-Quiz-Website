@@ -25,7 +25,7 @@
 }
 
 .hr {
-    border: 2px solid rgb(218, 132, 3);
+    border: 2px solid #da8403;
     margin: 30px 0;
     transition: border-color 0.3s ease;
     position: relative;
@@ -68,16 +68,19 @@
 }
 
 /* Styling for radio buttons */
-input[type="radio"] {
+input[type="radio"] 
+{
     margin: 8px;
-    padding: 5px;
-    cursor: pointer;
-    accent-color: rgb(218, 132, 3);
-    transform: scale(1.1);
-    transition: transform 0.2s ease;
+    width: 12px;
+    height: 12px;
+    padding: 10px;
+    accent-color: #da8403;
+    transition: ease-in-out 0.2s; 
 }
-input[type="radio"]:hover {
-    transform: scale(1.2);
+input[type="radio"]:hover 
+{
+    transform: scale(1.1);
+    accent-color: rgb(181, 111, 6);
 }
 
 #quizForm:hover {
@@ -87,12 +90,12 @@ input[type="radio"]:hover {
 #quizForm p {
     font-weight: bold;
     font-size: 1.2rem;
-    color: rgb(218, 132, 3);
+    color: rgb(146, 89, 3);
 }
 
 #quizForm label {
     font-size: 1.2rem;
-    color: rgb(218, 132, 3);
+    color: rgb(167, 102, 4);
 }
 
 #submitBtn {
@@ -111,10 +114,8 @@ input[type="radio"]:hover {
 }
 #submitBtn:hover {
     background-color: rgb(235, 168, 67);
-    ;
-    box-shadow: 0 8px 15px rgb(218, 132, 3);
-    ;
-    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgb(218, 132, 3);
+    transform: translateY(-5px);
 }
 
 /* Add responsive design for mobile */
@@ -128,7 +129,7 @@ input[type="radio"]:hover {
     #quizForm {
         width: 90%;
         font-size: 1rem;
-        padding: 10 px;
+        padding: 10px;
     }
 
     #submitBtn {

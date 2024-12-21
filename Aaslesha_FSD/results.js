@@ -73,3 +73,31 @@ new Chart(ctxPie, {
         }]
     }
 });
+
+document.getElementById('download-pdf').addEventListener('click', () => {
+    const { jsPDF } = window.jspdf;
+
+    // Capture the results container as an image
+    html2canvas(document.querySelector('.results-container')).then(canvas => {
+        const imgData = canvas.toDataURL('image/png');
+        const pdf = new jsPDF();
+
+        // Add the image to the PDF
+        const imgWidth = 190; // Adjust to fit the PDF width
+        const imgHeight = canvas.height * imgWidth / canvas.width;
+        pdf.addImage(imgData, 'PNG', 10, 10, imgWidth, imgHeight);
+
+        // Save the PDF
+        pdf.save('quiz-results.pdf');
+    });
+});
+
+html2canvas(document.querySelector('.results-container'), { scale: 6 }).then(canvas => {
+    const imgData = canvas.toDataURL('image/png');
+    const pdf = new jsPDF();
+    const pdfWidth = pdf.internal.pageSize.getWidth();
+    const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+
+    pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+    pdf.save('quiz-results.pdf');
+});

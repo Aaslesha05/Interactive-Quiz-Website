@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 130vh;
     background: linear-gradient(135deg, #fdfbfb, #ebedee);
     color: #333;
 }
@@ -19,6 +19,9 @@ body {
     text-align: center;
     width: 90%;
     max-width: 800px;
+    width: 210mm; /* A4 width */
+    max-height: 297mm; /* A4 height */
+    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -118,4 +121,38 @@ canvas {
 #badge-message{
     font-weight: bold;
 
+}
+#download-pdf{
+    background-color: #16a085;
+    color: white;
+    font-size: 1.15rem;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 40px;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 5px #1abc9c;
+    transition: ease-in-out 0.3s;
+}
+#download-pdf:hover{
+    background-color: #15d6b0;
+    color: #026854;
+    transform: translateY(-4px);
+    box-shadow: 0 15px 15px #1abc9c;
+}
+
+/* Media Queries */
+@media screen and (max-width: 690px) {
+    .results-container {
+        padding: 20px;
+    }
+
+    #graphs {
+        flex-direction: column;
+    }
+
+    .graph {
+        margin-top: 20px;
+    }
 }
