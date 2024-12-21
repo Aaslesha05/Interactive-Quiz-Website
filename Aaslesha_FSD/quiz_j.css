@@ -18,14 +18,14 @@
 
 .quiz-container h2 {
     text-align: center;
-    color: rgb(140, 51, 140);
+    color: rgb(218, 132, 3);
     font-size: 2.5rem;
     margin-bottom: 25px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .hr {
-    border: 2px solid rgb(113, 61, 161);
+    border: 2px solid rgb(218, 132, 3);
     margin: 30px 0;
     transition: border-color 0.3s ease;
     position: relative;
@@ -33,8 +33,8 @@
 }
 
 .hr:hover {
-    border-color: rgb(186, 111, 219);
-    box-shadow: 0 0 5px rgb(186, 111, 219);
+    border-color: rgb(205, 138, 37);
+    box-shadow: 0 0 5px rgb(218, 132, 3);
 }
 
 @keyframes hrExpand {
@@ -62,7 +62,7 @@
     width: 85%;
     max-width: 1000px;
     font-size: 1.2rem;
-    background-color: #f7eaf7;
+    background-color: rgb(235, 194, 133);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     transition: background-color 0.3s ease;
 }
@@ -81,7 +81,7 @@ input[type="radio"]:hover {
 }
 
 #quizForm:hover {
-    background-color: #f9f1fc;
+    background-color: rgb(242, 203, 149);
 }
 
 #quizForm p {
