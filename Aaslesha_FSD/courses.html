@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+    <h1>Courses</h1>
+    <ul class="listed">
+        <li class="course">
+            <img src="ht1.png" alt="Electronics">
+            <button type="button" class="btn" onclick="html()">HTML</button>
+        </li>
+        <li class="course">
+            <img src="ht2.png" alt="Python">
+            <button type="button" class="btn" onclick="css()">CSS</button>
+        </li>
+        <li class="course">
+            <img src="ht3.png" alt="Math" style="width: 130px;">
+            <button type="button" class="btn" onclick="js()">Java Script</button>
+        </li>
+        <li class="course">
+            <img src="EC.jpg" alt="Electronics">
+            <button type="button" class="btn" onclick="java()">Java</button>
+        </li>
+        <li class="course">
+            <img src="Python.jpg" alt="Python">
+            <button type="button" class="btn" onclick="C()">C language</button>
+        </li>
+        <li class="course">
+            <img src="Math.jpg" alt="Math">
+            <button type="button" class="btn" onclick="ds()">Data Structures</button>
+        </li>
+        
+    </ul>
+
+    <script>
+        function html() {
+            window.location.href = "quiz_h.html";
+        }
+        function css() {
+            window.location.href = "quiz_c.html";
+        }
+        function js() {
+            window.location.href = "quiz_j.html";
+        }
+
+    </script>
+</body>
+</html>

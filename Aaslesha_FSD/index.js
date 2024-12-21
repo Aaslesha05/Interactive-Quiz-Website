@@ -30,7 +30,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 
     document.getElementById('quiz').addEventListener('click', function() {
         // Redirect to the quiz page
-        window.location.href = 'quiz.html'; // Change 'quiz.html' to the actual quiz page URL
+        window.location.href = 'courses.html'; // Change 'quiz.html' to the actual quiz page URL
     });
 });
 

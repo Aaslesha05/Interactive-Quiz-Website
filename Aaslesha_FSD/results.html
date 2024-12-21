@@ -9,17 +9,28 @@
 </head>
 <body>
     <div class="results-container">
-        <h2>Quiz Results</h2>
-        <p id="score"></p>
-        <p id="percentage"></p>
-        <div id="graph" style="width: 500px; height: 300px;">
-            <canvas id="scoreGraph" width="200" height="200"></canvas>
+        <h2>Quiz Results</h2><hr>
+        <div class="score-info">
+            <p id="score"></p>
+            <p id="percentage"></p>
+            <p id="correct-incorrect"></p>
         </div>
-        <p id="badge"></p>
+        <div id="badgecont">
+            <img id="badge-icon" alt="Badge Icon">
+            <p id="badge"></p>
+            <p id="badge-message"></p>
+        </div>
+        <div id="graphs">
+            <div class="graph">
+                <h3>Score Overview</h3>
+                <canvas id="scoreGraph" style="height: 315px;"></canvas>
+            </div>
+            <div class="graph">
+                <h3>Answer Distribution</h3>
+                <canvas id="percentageGraph"></canvas>
+            </div>
+        </div>
     </div>
-
     <script src="results.js"></script>
-
-
 </body>
 </html>
