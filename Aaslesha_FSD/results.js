@@ -1,11 +1,12 @@
-
 const params = new URLSearchParams(window.location.search);
 const score = parseInt(params.get('score'));
 const total = parseInt(params.get('total'));
 const percentage = parseFloat(((score / total) * 100).toFixed(2));
 
 // Calculate correct and incorrect answers
-const incorrect = total - score;
+const correct = score;
+const incorrect = (total - score); // Either from params or calculated
+
 
 // Display the score and percentage
 document.getElementById('score').innerText = `Score: ${score} / ${total}`;
@@ -18,15 +19,15 @@ let badgeText = '';
 let badgeMessage = '';
 
 if (percentage >= 80) {
-    badgeIcon = 'gold.png';
+    badgeIcon = 'gold1.png';
     badgeText = '🥇 Excellent!';
     badgeMessage = 'You’re a star performer! Keep up the fantastic work.';
 } else if (percentage >= 50) {
-    badgeIcon = 'https://via.placeholder.com/80?text=Silver';
+    badgeIcon = 'silver1.png';
     badgeText = '🥈 Good Job!';
     badgeMessage = 'Well done! With a little more effort, you’ll ace it.';
 } else {
-    badgeIcon = 'https://via.placeholder.com/80?text=Bronze';
+    badgeIcon = 'bronze1.png';
     badgeText = '🥉 Keep Trying!';
     badgeMessage = 'Don’t give up! Practice makes perfect.';
 }
@@ -47,7 +48,7 @@ new Chart(ctxBar, {
             data: [score],
             backgroundColor: 'rgba(46, 189, 89, 0.6)',
             borderColor: 'rgb(3, 54, 54)',
-            borderWidth: 1
+            borderWidth: 2
         }]
     },
     options: {
@@ -67,8 +68,8 @@ new Chart(ctxPie, {
     data: {
         labels: ['Correct', 'Incorrect'],
         datasets: [{
-            data: [score, incorrect],
-            backgroundColor: ['#2ebd59', '#e63946']
+            data: [correct, incorrect],
+            backgroundColor: ['#2ebd59', '#e63946'],
         }]
     }
 });

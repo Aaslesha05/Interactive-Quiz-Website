@@ -14,7 +14,7 @@ body {
 .results-container {
     background: #fff;
     border-radius: 15px;
-    padding: 30px;
+    padding: 40px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 90%;
@@ -29,9 +29,9 @@ body {
 
 h2 {
     margin-bottom: 20px;
-    color: #2980b9;
+    color: #1b6394;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
@@ -50,8 +50,8 @@ h2 {
 
 #badge-icon {
     margin-top: 20px;
-    width: 120px;
-    height: 120px;
+    width: 85px;
+    height: 150px;
     margin-bottom: 0px;
     animation: bounce 1.5s infinite;
 }
@@ -74,7 +74,7 @@ h2 {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-12px);
+        transform: translateY(26px);
     }
 }
 
@@ -98,7 +98,8 @@ h2 {
 
 .graph h3 {
     margin-bottom: 10px;
-    font-size: 1.2em;
+    font-weight: bold;
+    font-size: 1.4rem;
     color: #2980b9;
     text-align: center;
 }
@@ -106,4 +107,15 @@ h2 {
 canvas {
     max-width: 100%;
     margin: auto;
+}
+.score-info{
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 1.5; 
+    letter-spacing: 1.3px;
+
+}
+#badge-message{
+    font-weight: bold;
+
 }
