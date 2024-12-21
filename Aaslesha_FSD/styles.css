@@ -90,11 +90,14 @@ button:hover {
 }
 
 #errorMessage {
-    color: #ffffff;
+    color: #efe8f0;
     font-size: 14px;
     margin-top: 10px;
     display: none;
     animation: fadeIn 0.3s ease-in-out;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 /* Success card styling */
