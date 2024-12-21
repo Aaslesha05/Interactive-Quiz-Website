@@ -47,7 +47,7 @@ const quizData = [
     },
     {
         question:"What is the purpose of the localStorage object in JavaScript?",
-        options:["To store data for the duration of the session","To store data that is accessible across all tabs in the browser",") To store data locally in the browser indefinitely","To store data for the entire website"],
+        options:["To store data for the duration of the session","To store data that is accessible across all tabs in the browser","To store data locally in the browser indefinitely","To store data for the entire website"],
         correctAnswer:2
     }
 ];
